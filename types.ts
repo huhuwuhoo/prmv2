@@ -1,25 +1,22 @@
 
-export interface Token {
+export interface TokenMetadata {
   id: string;
-  address: string;
   name: string;
-  symbol: string;
-  creator: string;
-  totalSupply: string;
-  price: string;
-  marketCap: string;
-  logoUrl?: string;
-  description?: string;
+  description: string;
+  image: string;
+  attributes?: Array<{ trait_type: string; value: any }>;
+  mintDate?: string;
+  owner?: string;
 }
 
-export interface TradeRequest {
-  tokenAddress: string;
-  amount: string;
-  type: 'BUY' | 'SELL';
+export interface ProjectStats {
+  totalMinted: number;
+  contractAddress: string;
+  projectId: string;
+  network: string;
 }
 
-export enum AppSection {
-  LIST = 'LIST',
-  LAUNCH = 'LAUNCH',
-  TRADE = 'TRADE'
+export interface ChatMessage {
+  role: 'user' | 'model';
+  text: string;
 }

@@ -1,5 +1,5 @@
 {
-  "name": "BaseLaunch - Meme Coin Factory",
-  "description": "A decentralized platform on Base Sepolia for deploying, buying, and selling meme tokens with AI-powered naming and marketing assistance.",
+  "name": "Base Sepolia Token Explorer",
+  "description": "A high-performance dashboard for viewing minted tokens on the Base Sepolia testnet, featuring real-time blockchain data and Gemini-powered token insights.",
   "requestFramePermissions": []
 }
